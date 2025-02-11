@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/bootstrapfiles/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/bootstrapfiles/js/bootstrap.min.js">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/style.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=humidity_percentage" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+</head>
+
+<body>
+  <header>
+  
+
+    <nav class="navbar navbar-expand-lg bg-body-invisible fixed-top" id="non">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/images/datoms_logo_registered-2.webp" alt="" style="width: 130px;"></a>
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: orangered;">DATOMS</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+         
+         <ul class="list-inline" id="line">
+          <li class="nav-item dropdown list-inline-item" id="first-dropdown">
+            <a class=" dropdown" href="#"  data-bs-toggle="dropdown"  id="platform" style="text-decoration: none;">
+              Platform
+            </a>
+            <ul class="dropdown-menu" id="drop-wid">
+              <li id="platform-1"><a href="#" style="text-decoration: none;">Platform</a></li>
+              <li id="platform-2">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fd8109"><path d="M80-80v-481l280-119v80l200-80v120h320v480H80Zm80-80h640v-320H480v-82l-200 80v-78l-120 53v347Zm280-80h80v-160h-80v160Zm-160 0h80v-160h-80v160Zm320 0h80v-160h-80v160Zm280-320H680l40-320h120l40 320ZM160-160h640-640Z"/></svg>
+              
+                
+                <a href="#"> Platform for OEM</a> <br> <p>The Connected Assets Cloud</p></li>
+              <li id="platform-3">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fd8109"><path d="M320-680q-50 0-85-35t-35-85q0-50 35-85t85-35q38 0 69 22.5t45 57.5h326v80h-40v80h-80v-80H434q-14 35-45 57.5T320-680Zm0-80q17 0 28.5-11.5T360-800q0-17-11.5-28.5T320-840q-17 0-28.5 11.5T280-800q0 17 11.5 28.5T320-760Zm40 500q17 0 28.5-11.5T400-300q0-17-11.5-28.5T360-340q-17 0-28.5 11.5T320-300q0 17 11.5 28.5T360-260Zm240 0q17 0 28.5-11.5T640-300q0-17-11.5-28.5T600-340q-17 0-28.5 11.5T560-300q0 17 11.5 28.5T600-260ZM200-376l66-192q5-14 16.5-23t25.5-9h344q14 0 25.5 9t16.5 23l66 192v264q0 14-9 23t-23 9h-16q-14 0-23-9t-9-23v-48H280v48q0 14-9 23t-23 9h-16q-14 0-23-9t-9-23v-264Zm106-64h348l-28-80H334l-28 80Zm-26 80v120-120Zm0 120h400v-120H280v120Z"/></svg>
+                <a  href="#">Platform for Equipment Rental Owners</a>
+                  <p>Enabling rental companies to deliver exceptional service to their customers.</p>
+              </li>
+              <li id="platform-4">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fd8109"><path d="M120-120v-560h160v-160h400v320h160v400H520v-160h-80v160H120Zm80-80h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 320h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 480h80v-80h-80v80Zm0-160h80v-80h-80v80Z"/></svg>
+              <a  href="#">IoT Solutions for Enterprises</a>
+              <p>Secure & scalable platform to unleash the value of IoT for Enterprises.</p>
+              </li>
+               <div class="right-div">
+                
+              <img id="aicpa" src="/dropdown img/Rectangle-16-2.png" alt="" >
+              <h5 id="secure">SECURE BY DESIGN</h5>
+              <p id="soc2">We’re now SOC2 Type II certified</p>
+              <a id="learnmore-1" href="#">Learn more</a>
+
+              <img id="blog" src="/dropdown img/Rectangle-18-3.png" alt="" >
+              <h5 id="empowering">Empowering OEMs in the Age of Smart Products:</h5>
+              <p id="rising">The rising demand for smart and connected products</p>
+              <a id="learnmore-2" href="#">Learn more</a>
+               </div>
+
+             
+            </ul>
+          </li>
+         
+          <li class="nav-item dropdown list-inline-item" id="second-dropdown">
+            <a class=" dropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false" id="iot" >
+             IoT Solutions
+            </a>
+            <ul class="dropdown-menu"  id="drop-wid-2">
+
+              <li class="second-dropdown-1"><a href="#">FOR ASSETS</a></li>
+
+              <li class="second-dropdown-2">
+                <i class="fa-solid fa-gas-pump"></i>
+                <a  href="#">Diesel & Gas Generators</a>
+                <p> Smart Generator  Monitoring <br> Solution</p>
+              </li>
+
+              <li class="second-dropdown-3">
+                <i class="fa-solid fa-charging-station"></i>
+                <a href="">Electric Vehicles</a>
+                <p>IoT for Electric Vehicle <br> Monitoring & Management</p>
+              </li>
+
+              <li class="second-dropdown-4">
+                <i class="fa-solid fa-fan"></i>
+                <a  href="#">Air Compressors</a>
+                <p>Air Compressor Monitoring System</p>
+              </li>
+                   
+              <h5 id="cases">USE CASES</h5>
+              <img id="blog-img" src="/dropdown img/Rectangle-18-3.png" alt="">
+              <h1 id="age-of-smart">Empowering OEMs in the Age of Smart <br> Products:</h1>
+              <p id="demand"> The demand for smart and connected products <br> is reshaping the industry.</p>
+              <a href="#" id="learnmore-3">Learn more</a>
+            </ul>
+          </li>
+          
+            <li class="list-inline-item"><a href="#" style="text-decoration: none;color: rgb(97, 93, 93);">Partners</a></li>
+            <li class="list-inline-item"><a href="#" style="text-decoration: none;color: rgb(97, 93, 93);">Security</a></li>
+            <li class="list-inline-item"><a href="#" style="text-decoration: none;color: rgb(97, 93, 93);">Resources</a></li>
+            <li class="list-inline-item"><a href="#" style="text-decoration: none;color: rgb(97, 93, 93);">Company</a></li>
+           </ul>
+           <div id="login">
+            <a href="#">DATOMS LOGIN</a>
+           </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="first-bg-img">
+    <img src="/images/coldstorage2.jpeg" alt="#">
+  </div>
+  <main class="">
+    <section>
+      <div class="main-box">
+        <div class="first-box">
+          <h4>COLD STORAGE MONITORING | Rated #1</h4>
+        </div>
+        <div class="first-box-1">
+          <h1>Maximize Cold Storage Operations <br> with Efficient, Cloud-Based Monitoring</h1>
+          <p>Optimize your cold storage warehouse with our advanced IoT-based cold storage monitoring solutions.
+            Designed specifically for modern warehousing needs, our platform delivers real-time insights into critical
+            parameters like temperature, humidity, energy usage, and more. Ensure optimal storage conditions, minimize
+            product loss through loss prevention technology, and achieve streamlined operations for a more efficient and
+            sustainable cold chain.</p> <br> <br>
+
+          <div id="free-trial"><a href="#">Begin Your free trial</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <main>
+    <svg id="line-bar" xmlns="http://www.w3.org/2000/svg" width="84" height="10" viewBox="0 0 84 10" fill="none">
+      <rect width="84" height="10" rx="5" fill="#fd8109"></rect>
+      <rect width="84" height="10" rx="5" fill="#fd8109"></rect>
+    </svg>
+  </main>
+  <main>
+    <div class="three-line">
+      <div class="three-line-inside">
+        <h5>AVOID COSTLY SPOILAGE & START SAVING</h5>
+        <h1>DATOMS Cold Storage Monitoring</h1>
+        <h2>Protect Perishables with Real-Time & Alerts</h2>
+      </div>
+    </div>
+    <div class="main-com-cha">
+
+      <div class="boy-image">
+        <img id="common-challenge" src="/images/common challenges.webp" alt="">
+      </div>
+      <div class="main-com-sec">
+        <div class="ware-house">
+          <h5>KEY WAREHOUSING CHALLENGES</h5>
+          <h2>Common Challenges</h2>
+          <h3>In Warehouse <span id="operation">Operations</span></h3>
+          <p>Warehousing operations face several challenges that can hinder efficiency and profitability. Our IoT
+            monitoring system addresses these challenges head-on, providing enhanced visibility, control, and
+            automation.</p>
+          <ul>
+            <li class="firstline-star"><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i> <span
+                style="padding-inline-start: 13px;"><b>Manual touchpoints:</b>Manual data entry<span style="padding-inline-start: 10px;" class="typos" >introduces the risk of
+                  errors,such as  typosincorrect values, or missed entries.</span> </span></span></li>
+            <li class="secondline-star"><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i><span
+                style="padding-inline-start: 13px;"><b>Improper Storage of Perishable Goods:</b> Protect sensitive items
+                with precise <span style="padding-inline-start: 30px;">environmental controls to avoid mold and damage.</span></span></li>
+            <li class="thirdline-star"><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i><span style="padding-inline-start: 13px;"><b>Energy
+                  Efficiency Monitoring:</b>Monitoring energy usage is necessary to reduce <span style="padding-inline-start: 30px;">operational costs and
+                    minimize environmental impact.</span></span></li>
+            <li class="fourthline-star"><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i><span
+                style="padding-inline-start: 13px;"><b>Regulatory Compliance:</b> Rules are strict in cold storage.
+                Meeting food safety <span style="padding-inline-start: 30px;">standards is a hassle, with lots of paperwork and inspections.</span></span></li>
+          </ul>
+        </div>
+      </div>
+  </main>
+  <main class="png">
+    <img src="" alt="">
+    <div>
+      <div class="assets-management">
+        <h1>COLD STORAGE ASSETS MANAGEMENT</h1>
+        <h6>Ensure seamless operation with real-time monitoring of:</h6>
+      </div>
+     <ul class="images-part list-inline">
+      <li class="list-inline-item   management  Compressors"><img  id="six-image" src="/images/6img/Compressors.webp" alt=""><p>Compressors</p></li>
+      <li class="list-inline-item   management  solar"><img  id="six-image" src="/images/6img/Solar-Panels.webp" alt=""><p>Solar Panels</p></li>
+      <li class="list-inline-item   management  grid"><img  id="six-image" src="/images/6img/Grids.webp" alt=""><p>Grids</p></li>
+      <li class="list-inline-item   management  generator"><img  id="six-image" src="/images/6img/Generators.webp" alt=""><p>Generators</p></li>
+      <li class="list-inline-item   management  energy"><img  id="six-image" src="/images/6img/Energy.webp" alt=""><p>Energy</p></li>
+      <li class="list-inline-item   management  chillers"><img  id="six-image" src="/images/6img/cold_icons-60.webp" alt=""><p>Chillers</p></li>
+     </ul>
+     <main>
+      <svg id="line-bar" xmlns="http://www.w3.org/2000/svg" width="84" height="10" viewBox="0 0 84 10" fill="none">
+        <rect width="84" height="10" rx="5" fill="#fd8109"></rect>
+        <rect width="84" height="10" rx="5" fill="#fd8109"></rect>
+      </svg>
+    </main>
+    </div>
+  </main>
+  <main >
+    <div>
+      <div class="Comprehensive">
+        <h1>Comprehensive Monitoring Solutions</h1>
+        <h3>Section-Wise Monitoring for Optimal Cold Storage Conditions</h3>
+        <p>In cold storage environments, maintaining precise temperature control is crucial to protect perishable goods and ensure quality.Our IoT-powered temperature monitoring system offers comprehensive, section-wise control, enabling you to oversee individual chambers and rooms within your warehouse with unmatched precision.</p>
+      </div>
+    </div>
+    
+  </main>
+  <main id="Comprehensive">
+    <div class="Chambers">
+        <div class="monitoring">
+          <h1>Customized Monitoring</h1>
+          <h2>for Different Chambers & Sections</h2>
+          <p>Each cold storage facility has unique requirements, with various chambers dedicated to different products—whether it’s pharmaceuticals, fresh produce, or frozen goods. Our intelligent temperature monitoring solution allows you to:</p>
+          <ul class="list-inline">
+            <li><span><i class="bi bi-patch-check list-inline-item" style="color: #fd8109;font-size: 20px;"></i></span> <span style="padding-inline-start: 10px;"><b>Segment Monitoring:</b>Track and control temperatures in individual <span id="chambers-room">chambers or rooms based on the specific needs of the products stored.</span></span> </li>
+            <li><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i><span style="padding-inline-start: 10px;"><b>Real-Time Data:</b>Analyze the relationship between door open times, <span id="temperature">temperature variations, and energy consumption.</span></span> </li>
+            <li><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i><span style="padding-inline-start: 10px;"><b>Machine and Chamber-Wise Monitoring:</b>Track every machine, asset,and  <span id="optimol-performance">chamber to ensure optimal performance and precise storage conditions.</span></span> </li>
+            <li><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i><span style="padding-inline-start: 10px;"><b>Automated Alerts: </b>Receive tailored alerts for each chamber, ensuring <span id="prevent-spoilage">timely actions to prevent spoilage and wastage.</span></span> </li>
+          </ul>
+        </div>
+    </div>
+    <div class="chambers">
+      <img src="/images/solar-UI-2.webp" alt="">
+    </div>
+  </main>
+  <main class="Tailored">
+    <div class="CorrelationAnalysis">
+        <img id="solar-ui" src="/images/solar-UI-1.webp" alt="">
+    </div>
+
+    <div class="SpecificAnalytics">
+      <div class="identify-patterns">
+        <h1>Tailored</h1>
+        <h2>Reporting and Analysis</h2>
+        <p>Our platform provides customized reports for each section of your warehouse, allowing you to <b>analyze historical data and identify patterns.</b> This ensures that your storage conditions consistently meet industry regulations and product-specific requirements.</p>
+        <ul class="list-inline">
+          <li><span><i class="bi bi-patch-check list-inline-item" style="color: #fd8109;font-size: 20px;"></i></span><span style="padding-inline-start: 10px;"><b>Room-Specific Analytics:</b>Gain detailed insights into the temperature <span id="correlating">performance of each room and chamber within your facility. Our analytics <span id="correlating">allow you to track and analyze trends, correlating data between different <span id="correlating">rooms to understand how ambient temperatures affect humidity and <span id="correlating">temperature variations.</span></span></span></span></span> </li>
+          <li><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i><span style="padding-inline-start: 10px;"><b>Correlation Analysis: </b>Analyze how ambient temperature impacts humidity <span id="level-acc">levels across different rooms, enabling precise adjustments for optimal <span id="level-acc" > environmental conditions</span></span></span> </li>
+          <li><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i><span style="padding-inline-start: 10px;"><b>Door Analytics:</b>Generate reports on every door opening and closing <span id="analyzing">analyzing each as a distinct trip or transaction to optimize operations</span></span> </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <main class="Unified-Dashboard">
+    <div class="temperature">
+        <div class=" region">
+          <h1>Unified Dashboard</h1>
+          <h2>for Complete Control</h2>
+          <p>Our dashboard gives you a clear view and control of all your warehouse operations, showing <b>temperature and humidity</b> levels for every location. With one platform, you can easily keep track of all your cold rooms and warehouses, <b>region and territory-wise</b>, no matter where they are.</p>
+          <a href="#">GET STARTED WITH DATOMS</a>
+        </div>
+    </div>
+    <div class="humidity">
+          <img src="/images/solar-dashboard-UI (1).webp" alt="">
+    </div>
+  </main>
+  <article>
+    <div class="article-sec">
+      <svg id="line-bar" xmlns="http://www.w3.org/2000/svg" width="84" height="10" viewBox="0 0 84 10" fill="none">
+        <rect width="84" height="10" rx="5" fill="#fd8109"></rect>
+        <rect width="84" height="10" rx="5" fill="#fd8109"></rect>
+      </svg>
+      <h1>Scalable Solutions for Multi-Room Operations</h1>
+      <p>As your business expands, our IoT solution facilitates the easy addition of <b>new chambers or rooms</b> to the platform, ensuring smooth integration without disruption. Whether you’re overseeing a <b>single warehouse or multiple locations</b>, our system delivers consistent and reliable temperature control for each section, complete with <b>detailed room-wise analysis</b> to optimize every space efficiently.</p>
+      <img src="/images/project/solar-UI-3.webp" alt="">
+      <svg id="line-bar" xmlns="http://www.w3.org/2000/svg" width="84" height="10" viewBox="0 0 84 10" fill="none">
+        <rect width="84" height="10" rx="5" fill="#fd8109"></rect>
+        <rect width="84" height="10" rx="5" fill="#fd8109"></rect>
+      </svg>
+    </div>
+  </article>
+  <section class="sec-section">
+    <div id="sec-section">
+      <h1>Essential Parameters for Effective</h1>
+      <h2>Warehouse and Cold Storage Monitoring</h2>
+      <p>Our IoT Remote Monitoring System tracks a wide range of parameters crucial for maintaining the optimal conditions in your warehouse and cold storage facilities. These parameters ensure the safety, efficiency, and reliability of your operations:
+      </p>
+    </div>
+    <div class="container text-center">
+      <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+        <div class="col">
+          <div class="p-3" id="thermometer">
+            <i class="bi bi-thermometer-sun" ></i>
+            <h1>Temperature and  Humidity Monitoring</h1> 
+            <p>Maintaining temperature and humidity levels is crucial in cold storage to protect the  quality and safety of perishable goods, preventing issues like mold, degradation, or drying</p>  
+          </div>
+         
+        </div>
+        <div class="col">
+          <div class="p-3" id="drop-percentage"><svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px" fill="#fd8109"><path d="M580-240q25 0 42.5-17.5T640-300q0-25-17.5-42.5T580-360q-25 0-42.5 17.5T520-300q0 25 17.5 42.5T580-240Zm-202-2 260-260-56-56-260 260 56 56Zm2-198q25 0 42.5-17.5T440-500q0-25-17.5-42.5T380-560q-25 0-42.5 17.5T320-500q0 25 17.5 42.5T380-440ZM480-80q-137 0-228.5-94T160-408q0-100 79.5-217.5T480-880q161 137 240.5 254.5T800-408q0 140-91.5 234T480-80Zm0-80q104 0 172-70.5T720-408q0-73-60.5-165T480-774Q361-665 300.5-573T240-408q0 107 68 177.5T480-160Zm0-320Z"/ ></svg>
+          <h1>Power Supply Monitoring</h1>
+          <p>Keep track of solar and grid energy usage in your warehouse to ensure continuous operation and optimize energy efficiency.
+          </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3" id="co2">
+            <i class="bi bi-cloud-fill"></i>
+            <h1>CO2 Levels</h1>
+            <p>Especially in cold storage, monitoring carbon dioxide levels helps ensure worker safety and proper atmospheric conditions for certain products.</p>
+          </div>
+        </div>
+      
+    </div>
+    <div class="container text-center">
+      <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+        <div class="col">
+          <div class="p-3" id="lightning">
+            <i class="bi bi-lightning-fill"></i>
+             <h1>Power Consumption</h1>
+             <p>Monitoring power ensures the consistent operation of refrigeration systems and alerts for any outages or irregularities</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3" id="door-wifi">
+            <img src="/images/project/images (1).png" alt="image">
+            <h1>Door Status:</h1>
+            <p>Frequent or prolonged door openings can lead to temperature spikes, so monitoring door activity helps reduce energy consumption and maintain conditions.
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3" id="sun-light">
+            <i class="bi bi-brightness-high"></i>
+            <h1>Ambient Monitoring</h1>
+            <p>Track and manage the overall environmental conditions, including temperature, humidity, and air quality, ensuring a stable and safe storage atmosphere.</p>
+          </div>
+        </div>
+    </div>
+  </section>
+  <main>
+    <div class="energy-management">
+
+      <div class="maximize-energy">
+                <img src="/images/project/solar-UI.webp" alt="">
+      </div>
+      <div class="uninerpted">
+          <h1>ENERGY MANAGEMENT SYSTEM</h1>
+          <h2>Maximize Energy Efficiency and Ensure</h2>
+          <h3>Uninterrupted Operations</h3>
+          <p>Efficiently manage your energy sources, including generators, inverter backups, and solar systems. Our platform integrates all your power sources into one streamlined system, optimizing energy use and reducing costs.</p>
+          <ul>
+            <li><span><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i></span><span style="padding-inline-start: 10px;"><b>Generator Monitoring:</b>Track fuel levels, run hours, and maintenance to <span id="uninerpted-span">avoid unexpected downtimes.</span></span></li>
+            <li><span><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i></span><span style="padding-inline-start: 10px;"><b>Inverter Backup Management:</b>Monitor battery health to ensure seamless <span id="uninerpted-span">power during outages.</span></span></li>
+            <li><span><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i></span><span style="padding-inline-start: 10px;"><b>Solar Integration:</b>Leverage solar energy for cost-effective and sustainable <span id="uninerpted-span">operations.</span></span></li>
+          </ul>
+      </div>
+
+    </div>
+    
+    <div class="energy-trend">
+      <div class="door-open">
+        <h1>Energy Trend Correlation</h1>
+        <h2>with Door Open Time and Temperature</h2>
+        <ul>
+          <li><span><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i></span><span style="padding-inline-start: 10px;"><b>Energy Consumption Tracking:</b>Monitor energy usage for each <span id="door-open-span">chamber or section, understanding how fluctuations in <span id="door-open-span">temperature and door activity contribute to increased energy <span id="door-open-span">costs.</span></span></span></span></li>
+          <li><span><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i></span><span style="padding-inline-start: 10px;"><b>Correlation Analysis:</b>Analyze the relationship between door <span id="door-open-span">open times, temperature variations, and energy consumption.</span></span></li>
+          <li><span><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i></span><span style="padding-inline-start: 10px;"><b>Door Open Time Tracking:</b>Monitor how long each door remains <span id="door-open-span">open throughout the day. Receive daily reports that track total <span id="door-open-span">door open time and correlate this data with temperature <span id="door-open-span">fluctuations in each chamber.</span></span></span></span></li>
+          <li><span><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i></span><span style="padding-inline-start: 10px;"><b>Day-Wise Analytics:</b>View trends in door activity and <span id="door-open-span">temperature variation across different days, allowing you to <span id="door-open-span">identify patterns and optimize operations accordingly.</span></span></span></li>
+        </ul>
+      </div>
+      <div class="time-tempreature">
+        <img src="/images/project/Energy-Trend-Correlation-solar-UI.webp" alt="image">
+      </div>
+    </div>
+    <div class="monitoring-feature">
+      <svg id="line-bar" xmlns="http://www.w3.org/2000/svg" width="84" height="10" viewBox="0 0 84 10" fill="none">
+        <rect width="84" height="10" rx="5" fill="#fd8109"></rect>
+        <rect width="84" height="10" rx="5" fill="#fd8109"></rect>
+      </svg>
+      <h1>Advanced Monitoring Features:</h1>
+      <h2>Visualization and Analytics to Enhance Warehouse Operations</h2>
+    </div>
+    <div class="site-analystic">
+      <div class="insights">
+             <h1>Site Analytics:</h1>
+             <h2>Insights into Asset Utilization</h2>
+             <p>Our advanced analytics feature provides real-time and historical data on asset utilization across all chambers and sections, allowing you to optimize their use.</p>
+             <ul>
+              <li><span><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i></span> <span><b>Utilization Reports:</b> Gain insights into how each chamber, <span id="insights-span">refrigeration unit, or other assets are being used, and adjust <span id="insights-span">operational schedules to maximize efficiency.</span></span></span></li>
+              <li><span><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i></span> <span><b>Multi-Sensor Analysis:</b>Track and correlate readings from <span id="insights-span">temperature, humidity, and door sensors across different <span id="insights-span">chambers or sections.</span></span></span></li>
+              <li><span><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i></span> <span style="padding-inline-start: 10px;"><b>Customizable Alerts:</b>Set custom thresholds for each chamber <span id="insights-span">or section. For example, if a door remains open for more than 30 <span id="insights-span">minutes, you will receive an alert. If it stays open for an <span id="insights-span">additional 30 minutes, a follow-up alert will ensure that timely <span id="insights-span">action is taken.</span></span></span></span></span></li>
+             </ul>
+      </div>
+      <div class="asset-utilization">
+              <img src="/images/project/2solar-UI-1.webp" alt="">
+      </div>
+    </div>
+
+    <div class="sclable-monitoring">
+      <div class="flexible-easy">
+              <img src="/images/project/Scalable-Monitoring-System.webp" alt="">
+      </div>
+      <div class="growing-operation">
+            <h1>SCALABLE MONITORING SOLUTIONS</h1>
+            <h2>Flexible and Easy-to-Scale <br>
+              <span>for Growing Operations</span></h2>
+            <p>As your business grows, our IoT monitoring system scales seamlessly with your needs. Whether managing one site or multiple locations, our platform is designed to adapt.</p>
+            <ul>
+              <li><span><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i></span><span style="padding-inline-start: 10px;"><b>Quick Implementation:</b>Launch quickly with minimal setup. Scale  <span id="growing-operation-span">effortlessly without costly adjustments.</span></span></li>
+              <li><span><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i></span><span style="padding-inline-start: 10px;"><b>Cost-Efficient Operations:</b> Reduce costs through energy-efficient  <span id="growing-operation-span">monitoring and streamlined processes.</span></span></li>
+              <li><span><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i></span><span style="padding-inline-start: 10px;"><b>Simplified Site Configuration:</b>Our easy-to-use platform simplifies  <span id="growing-operation-span"> the configuration of your cold storage facility, seamlessly integrating  <span id="growing-operation-span">various energy sources and equipment into a unified monitoring </span></span></span></li>
+            </ul>
+      </div>
+    </div>
+
+    <div class="cold-room">
+      <svg id="line-bar" xmlns="http://www.w3.org/2000/svg" width="84" height="10" viewBox="0 0 84 10" fill="none">
+        <rect width="84" height="10" rx="5" fill="#fd8109"></rect>
+        <rect width="84" height="10" rx="5" fill="#fd8109"></rect>
+      </svg>
+      <h1>Smart Solutions for Cold Room</h1>
+      <h2>Manufacturers: Empowering Market Leadership</h2>
+      <p>Our IoT-powered smart solutions enable cold room manufacturers to incorporate intelligent features that ensure precise environmental control, energy efficiency, and real-time data analytics.</p>
+    </div>
+
+    <div class="smart-solution">
+      <div class="smart-products">
+            <ul>
+              <li><span><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i></span><span style="padding-inline-start: 10px;"><b>Smart Products: </b>Seamlessly transforming your existing product <span id="smart-products-span">line into smart, interconnected systems that enhance <span id="smart-products-span">efficiency,and open new avenues for innovation.</span></span></span></li>
+              <li><span><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i></span><span style="padding-inline-start: 10px;"><b>Additional Revenue:</b>Unlock additional revenue streams by <span id="smart-products-span">enhancing cold room functionalities, enabling smart monitoring, <span id="smart-products-span">preventive maintenance, and energy optimization.</span></span></span></li>
+              <li><span><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i></span><span style="padding-inline-start: 10px;"><b>White-Label Platform</b>Offer your own branded IoT monitoring <span id="smart-products-span">system, enabling your customers to monitor and control their <span id="smart-products-span">cold rooms via a web or mobile app.</span></span></span></li>
+              <li><span><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i></span><span style="padding-inline-start: 10px;"><b>Market Leadership:</b> Offer cutting-edge technology that <span id="smart-products-span">differentiates your cold rooms from competitors, helping you <span id="smart-products-span">capture a larger share of the market.</span></span></span></li>
+              <li><span><i class="bi bi-patch-check" style="color: #fd8109;font-size: 20px;"></i></span><span style="padding-inline-start: 10px;"><b>Plug-and-Play Sensors:</b> Our IoT sensors are easy to install and <span id="smart-products-span">configure, making it simple for manufacturers to add smart <span id="smart-products-span">features to their existing product lines.</span></span></span></li>
+            </ul>
+      </div>
+      <div class="additional-revenue">
+          <img src="/images/project/PolarBear-R1-C1-IMG_6282.webp" alt="">
+      </div>
+    </div>
+    <div class="apllication-use">
+      <svg id="line-bar" xmlns="http://www.w3.org/2000/svg" width="84" height="10" viewBox="0 0 84 10" fill="none">
+        <rect width="84" height="10" rx="5" fill="#fd8109"></rect>
+        <rect width="84" height="10" rx="5" fill="#fd8109"></rect>
+      </svg>
+      <h5>USE CASES</h5>
+      <h1>Applications and Use Cases of :</h1>
+      <h2>Cold Storage Monitoring Across Various Industries</h2>
+      <p>Cold storage monitoring is essential across a wide range of industries that rely on precise temperature control to ensure the quality, safety, and longevity of perishable goods.</p>
+    </div>
+
+
+    <div class="container text-center" id="images-sec">
+      <div class="row row-cols-4">
+        <div class="col">
+          <img class="supermarket" src="/images/project/Mask-group-3.webp" alt="supermarket" style="max-width: 100%;">
+          <p>Supermarkets Darkstores</p>
+        </div>
+        <div class="col">
+          <img src="/images/project/Healthcare-Facilities-1.webp" alt="healthcare" style="max-width: 100%;">
+          <p>Healthcare Facilities</p>
+        </div>
+        <div class="col">
+          <img src="/images/project/Mask-group-1.webp" alt=""style="max-width: 100%;">
+          <p>Fish and Seafood Markets</p>
+        </div>
+        <div class="col">
+          <img src="/images/project/Pharmaceutical-and-Biotech-1.webp" alt="medicene" style="max-width: 100%;">
+          <p>Pharmaceutical and Biotech</p>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center" id="images-sec">
+      <div class="row row-cols-4">
+        <div class="col">
+          <img src="/images/project/Mask-group-2.webp" alt="powder" style="max-width: 100%;">
+          <p>Dye and Cosmetics Industry</p>
+        </div>
+        <div class="col">
+          <img src="/images/project/Mask-group.webp" alt="" style="max-width: 100%;">
+          <p>Restaurants and Food Services</p>
+        </div>
+        <div class="col">
+          <img src="/images/project/Mask-group-4.webp" alt="" style="max-width: 100%;">
+          <p>Breweries & Wineries</p>
+        </div>
+        <div class="col">
+          <img src="/images/project/Mask-group-5.webp" alt="" style="max-width: 100%;">
+          <p>Meat & Poultry Industry</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pink-box">
+      <h1>Ready to get started?</h1>
+      <h2>Contact us to optimize your</h2>
+      <h3>cold storage and warehouse with IoT monitoring.</h3>
+      <p>Have questions? Reach out to our team for assistance.</p>
+      <div class="trial">
+        <a id="contact" href="#">Start a Free trial</a>
+      </div><br>
+      <p class="contact">or <a  href="" style="text-decoration: none;">contact us</a></p>
+      
+    </div>
+  </main>
+  <footer>
+    <div class="footer-sec">
+      <div class="footer-inside">
+      <div class="container text-center" id="footer-sec">
+        <div class="footer-inside">
+        <div class="row row-cols-4">
+          <div class="col" id="footer-sec">
+             <p id="contact-1">Contact Us</p>
+             <p style="color: gray;"> <i class="bi bi-envelope-paper-heart" style="color: #fd8109;"></i><span style="padding-inline-start: 10px;"> Email: contact@datoms.io</span></p>
+             <p style="color: gray;"> <i class="bi bi-telephone-fill" style="color: #fd8109;"></i> <span style="padding-inline-start: 10px;">Phone: +91 9692446655</span></p>
+             <p style="color: gray;"> <i class="bi bi-geo-alt-fill" style="color: #fd8109;"></i> <span style="padding-inline-start: 10px;">Our Locations <br>
+              <span style="padding-inline-start: 30px;">Bangalore | Bhubaneswar</span></span></p>
+              <p style="color: gray;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fd8109"><path d="M640-80v-90q-56-18-94-64t-44-106h80q8 43 40.5 71.5T700-240h120q25 0 42.5 17.5T880-180v100H640Zm120-200q-33 0-56.5-23.5T680-360q0-33 23.5-56.5T760-440q33 0 56.5 23.5T840-360q0 33-23.5 56.5T760-280ZM360-400q0-150 105-255t255-105v80q-117 0-198.5 81.5T440-400h-80Zm160 0q0-83 58.5-141.5T720-600v80q-50 0-85 35t-35 85h-80ZM80-520v-100q0-25 17.5-42.5T140-680h120q45 0 77.5-28.5T378-780h80q-6 60-44 106t-94 64v90H80Zm120-200q-33 0-56.5-23.5T120-800q0-33 23.5-56.5T200-880q33 0 56.5 23.5T280-800q0 33-23.5 56.5T200-720Z"/></svg><span style="padding-inline-start: 10px;">connect with us</span>
+              </p>
+          </div>
+          <div class="col" id="footer-sec-1">
+            <h6>Legal</h6>
+            <ul>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Copyright</a><br></li>
+              <li><a href="">Terms of <br> Service</a></li>
+              <li> <a href="">Cookie Use <br> Policy</a></li>
+            </ul>
+          </div>
+          <div class="col" id="footer-sec-2">
+            <h6>Resources</h6>
+           <ul>
+            <li> <a href="#">Security</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Become Partner</a></li>
+           </ul>
+          </div>
+          <div class="col" id="footer-sec-3">
+            <h6>Follow Us</h6>
+            <h3>Phoenix Robotix Pvt. Ltd.</h3>
+            <a href="#" class="linkdin"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div class="circle-img ">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#"><img src="/images/project/1.webp" alt=""></a></li>
+              <li class="list-inline-item"><a href="#"><img src="/images/project/2.webp" alt=""></a></li>
+              <li class="list-inline-item"> <a href="#"><img src="/images/project/3.webp" alt=""></a></li>
+              <li class="list-inline-item"> <a href="#"><img src="/images/project/4.webp" alt=""></a></li>
+            </ul>
+          </div>
+          <div class="copyright-line">
+            <h5>Copyright 2024 | Phoenix Robotix Private Limited | All rights reserved</h5>
+            <div class="copyright-line-1"></div>
+            <div class="copyright-line-2"></div>
+            <div class="whatsapp">
+              <a href="https://datoms.io/"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+           
+           
